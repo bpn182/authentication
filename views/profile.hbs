@@ -1,0 +1,22 @@
+{{>header}}
+
+{{title}}
+<br>
+{{this.name}}
+<br>
+{{this.email}}
+
+  {{#if currentUser}}
+    <h1>Known Author</h1>
+  {{else}}
+  {{currentUser}}
+    <h1>Unknown Author</h1>
+  {{/if}}
+
+
+
+
+
+{{!-- Displaying log in handlebars --}}
+{{!--   {{log "bipin======>"currentUser}}
+  		{{log "Look at me!"}} --}}
