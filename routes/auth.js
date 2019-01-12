@@ -56,7 +56,7 @@ router.get('/logout',function(req,res,next){
 })
 
 
-router.get('/register', function(req, res){
+router.get('/register',mid.checklogin, function(req, res){
    res.render('register');
 });
 

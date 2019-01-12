@@ -8,8 +8,8 @@ var hbs  = require('express-handlebars');
 //Mongo setup
 var mongoose = require('mongoose');
 var MongoStore = require('connect-mongo')(session);
-var connection = mongoose.connect('mongodb://localhost/bpndb', { useNewUrlParser: true,useCreateIndex: true });  //it will remove deprecation messages
-connection;
+mongoose.connect('mongodb://localhost/bpndb', { useNewUrlParser: true,useCreateIndex: true });  //it will remove deprecation messages
+
 
 var routes = require('./routes/auth.js');
 app.use(morgan('dev'));
